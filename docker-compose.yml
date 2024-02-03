@@ -1,0 +1,16 @@
+services:
+  db:
+    image: postgres:alpine
+    restart: always
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=123456
+    ports:
+      - 5432:5432
+    container_name: "kratos"
+    volumes:
+      - "node_pg_data:/var/lib/postgresql/data"
+
+volumes:
+  node_pg_data:
+    name: node_pg_data
