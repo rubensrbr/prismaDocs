@@ -1,2 +1,2 @@
 # prismaDocs
-just a repo to sava what i learned from Prisma Documentation
+just a repo to save what i learned from Prisma Documentation
